@@ -3,8 +3,6 @@
 require('dotenv').config();
 
 
-const sessionMiddleware = require("./app/middlewares/sessionMiddleware.js");
-
 // Importe les dépendances tiers
 const express = require('express');
 
@@ -17,8 +15,6 @@ const app = express();
 // Middleware pour parser les données URL-encoded
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // Ajout pour parser les données JSON
-
-app.use(sessionMiddleware);
 
 
 // Mise en place du moteur de rendu

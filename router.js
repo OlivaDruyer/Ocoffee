@@ -7,9 +7,6 @@ const contactController= require('./app/controllers/contactController');
 //const authController = require("./app/controllers/authController.js");
 
 
-router.get('/', (req, res) => {
-    res.render('pages/home');
-  });
 router.get('/', mainController.homePage);
 router.get('/article/:id', mainController.articlePage);
 router.get('/catalog', mainController.catalogPage);
