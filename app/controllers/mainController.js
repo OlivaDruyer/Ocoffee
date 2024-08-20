@@ -8,7 +8,7 @@ const mainController = {
       res.render("pages/home", { threecoffees });
     } catch (error) {
       console.error(error);
-      response.send("error");
+      res.send("error");
     }
   },
 

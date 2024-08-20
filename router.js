@@ -16,7 +16,7 @@ router.get('/category/:categoryId', mainController.searchPage);
 router.post('/add-to-cart', cartController.addToCart);
 router.get('/cart', cartController.displayCart);
 router.post('/remove-from-cart', cartController.removeFromCart);
-router.get('/contact', contactController.contactForm); 
-router.post('/contact', contactController.submitContactForm); 
+//router.get('/contact', contactController.contactForm); 
+//router.post('/contact', contactController.submitContactForm); 
 
 module.exports = router;
